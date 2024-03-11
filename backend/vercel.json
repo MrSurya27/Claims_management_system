@@ -6,6 +6,7 @@
     "routes": [
         { "src": "/api_docs/(.*)", "dest": "/api_docs/$1" },
         { "src": "/set-cookie", "dest": "/set-cookie" },
-        { "src": "/(.*)", "dest": "/" }
+        { "src": "/(.*)", "dest": "/" },
+        { "src": "/(.*)", "dest": "/"}
     ]
 }
