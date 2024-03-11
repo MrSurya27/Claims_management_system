@@ -46,7 +46,7 @@ Getting started with the Lumiq's Claims Management Platform is a breeze:
 
 1. **Clone Repository**: Clone the repository to your local machine using the following command:
    ```bash
-   git clone "https://github.com/gautam-u-hub/Claims-Management-System----DEMO/new/master?filename=README.md"
+   git clone "https://github.com/MrSurya27/Claims_management_system"
 
 ```
 2. Install dependencies using npm:
