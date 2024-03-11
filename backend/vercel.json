@@ -1,12 +1,11 @@
 {
-    "version":2,
+    "version": 2,
     "builds": [
-        {"src": "*.js", "use": "@vercel/node"}
+        { "src": "*.js", "use": "@vercel/node" }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+        { "src": "/api_docs/(.*)", "dest": "/api_docs/$1" },
+        { "src": "/set-cookie", "dest": "/set-cookie" },
+        { "src": "/(.*)", "dest": "/" }
     ]
 }
