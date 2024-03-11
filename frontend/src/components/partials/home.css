@@ -1,0 +1,12 @@
+.algerian-style {
+    /* Set the font family to Algerian */
+    font-family: Georgia, serif;
+
+    /* Set other text properties if needed */
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    position: fixed;
+    top: 100px;
+    /* Add more properties as needed */
+}
