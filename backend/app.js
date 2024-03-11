@@ -52,6 +52,9 @@ app.get('/set-cookie', (req, res) => {
     res.cookie('myCookie', 'cookieValue', { maxAge: 900000, httpOnly: true });
     res.send('Cookie set successfully');
 });
+app.get('/', (req, res) => {
+    res.send('API running');
+});
 app.use("", userRoutes);
 app.use("", policyRoutes);
 app.use("", claimRoutes);
