@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: 'https://claimsmanagementsystemsurya.netlify.app/', 
+    origin: 'https://claimsmanagementsystemsurya.netlify.app', 
     credentials: true
 }));
 
