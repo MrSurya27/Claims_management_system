@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:4000/assign-policy/${policyId}`,
+      `https://claims-management-system-2.onrender.com/assign-policy/${policyId}`,
       { email },
       config
     );

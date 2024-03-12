@@ -23,7 +23,7 @@ const ChangeClaimStatus = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/TPA/claims/${claimId}`
+          `https://claims-management-system-2.onrender.com/TPA/claims/${claimId}`
         );
         setClaim(response.data.claim);
         console.log(response.data);
@@ -48,7 +48,7 @@ const ChangeClaimStatus = () => {
       };
 
       const { data } = await axios.put(
-        `http://localhost:4000/TPA/claims/${claimId}`,
+        `https://claims-management-system-2.onrender.com/TPA/claims/${claimId}`,
         { status },
         config
       );

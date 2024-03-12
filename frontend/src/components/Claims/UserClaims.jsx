@@ -9,7 +9,7 @@ const AllClaims = () => {
   useEffect(() => {
     const fetchClaims = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/claims");
+        const response = await axios.get("https://claims-management-system-2.onrender.com/claims");
         setClaims(response.data.claims);
       } catch (error) {
         console.error("Error fetching claims:", error);

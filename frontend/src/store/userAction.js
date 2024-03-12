@@ -9,7 +9,7 @@ export const loginUser = ({ email, password }) => {
                 headers: { "content-type": "application/json" },
             };
 
-            const { data } = await axios.post(`http://localhost:4000/auth/login`, { email, password }, config);
+            const { data } = await axios.post(`https://claims-management-system-2.onrender.com/auth/login`, { email, password }, config);
             dispatch(userAction.loginUser({
                 user: data.user,
                 isAuthenticated: true
@@ -26,7 +26,7 @@ export const loginUser = ({ email, password }) => {
 export const logoutUser = () => {
     return async (dispatch) => {
         try {
-            await axios.get(`http://localhost:4000/auth/logout`);
+            await axios.get(`https://claims-management-system-2.onrender.com/auth/logout`);
             dispatch(userAction.logoutUser({
                 message: "success"
             }));
@@ -45,7 +45,7 @@ export const registerUser = ({ email, name, password }) => {
                 headers: { "content-type": "application/json" },
             };
 
-            const { data } = await axios.post(`http://localhost:4000/auth/register`, { name, email, password }, config);
+            const { data } = await axios.post(`https://claims-management-system-2.onrender.com/auth/register`, { name, email, password }, config);
             dispatch(userAction.registerUser({
                 user: data.user
             }));

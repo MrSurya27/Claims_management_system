@@ -52,7 +52,7 @@ const UpdatePolicy = () => {
        const fetchPolicy = async () => {
          try {
            const response = await axios.get(
-             `http://localhost:4000/policy/${policyId}`
+             `https://claims-management-system-2.onrender.com/policy/${policyId}`
              );
             console.log(response.data.policy);
            setFormData(response.data.policy);
@@ -73,7 +73,7 @@ const UpdatePolicy = () => {
       };
 
       const { data } = await axios.put(
-        `http://localhost:4000/policy/${policyId}`,
+        `https://claims-management-system-2.onrender.com/policy/${policyId}`,
         formData,
         config
       );

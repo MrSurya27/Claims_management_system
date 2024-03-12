@@ -10,7 +10,7 @@ const ClaimDetails = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/claims/${claimId}`
+          `https://claims-management-system-2.onrender.com/claims/${claimId}`
         );
         setClaim(response.data.claim);
         // Process the response here

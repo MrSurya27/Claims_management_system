@@ -113,7 +113,7 @@ const handleSubmit = async (event) => {
     };
 
     const { data } = await axios.post(
-      `http://localhost:4000/policy`,
+      `https://claims-management-system-2.onrender.com/policy`,
       formData,
       config
     );

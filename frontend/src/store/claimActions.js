@@ -12,7 +12,7 @@ export const createClaim = ({ policyId, claimDate, claimAmount, description }) =
                 headers: { "content-Type": "application/json" },
             };
 
-            const { data } = await axios.post(`http://localhost:4000/claims/${policyId}`, { claimDate, claimAmount, description }, config);
+            const { data } = await axios.post(`https://claims-management-system-2.onrender.com/claims/${policyId}`, { claimDate, claimAmount, description }, config);
             console.log(data);
             dispatch(createClaimSuccess({
                 claims: data.claim

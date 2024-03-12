@@ -11,7 +11,7 @@ const AllClaims = () => {
   useEffect(() => {
     const fetchClaims = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/TPA/claims");
+        const response = await axios.get("https://claims-management-system-2.onrender.com/TPA/claims");
         setClaims(response.data.claims);
       } catch (error) {
         setErrorMessage("Error fetching claims");

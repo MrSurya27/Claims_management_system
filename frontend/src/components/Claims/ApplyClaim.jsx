@@ -38,7 +38,7 @@ const ApplyClaim = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:4000/claims/${policyId}`,
+        `https://claims-management-system-2.onrender.com/claims/${policyId}`,
         { claimDate, claimAmount, description },
         config
       );
